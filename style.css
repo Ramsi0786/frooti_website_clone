@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "M plus 1", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  background-image: url(image/frooti_advrtsmnt.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+.homepage-container {
+  height: 117vh;
+  background-image: url(image/frooti_advrtsmnt.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 68px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    z-index: 100;
+    background-color: rgb(1, 14, 35);
+  }
+  .logo img.leaf-aLogo{
+    height: 65px;
+    width: 165px;
+    position: relative;
+    left: -13%;
+  }
+  .menu-list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    right: 10%;
+  }
+  .nav-list i {
+    margin-left: 10px;
+  }
+  .menu-list :hover {
+    color: rgba(255, 0, 0, 0.758);
+  }
+  .menu-list a{
+    letter-spacing: 1.3px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    user-select: text;
+  }
+  .frooti-section {
+    display: flex;
+    height: 100vh;
+    font-family: sans-serif;
+  }
+  
+  .left-half {
+    background-color:rgb(250, 147, 38);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50%;
+    height: 150%;
+  }
+  
+  .frooti-text {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .frooti-text h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+  }
+  .h1-lines {
+    z-index: 2;
+    position: relative;
+    margin-top: 10rem; /* Adjust the number as needed */
+  }
+  /* Styling for line1 */
+.line1 {
+  font-size: 4.5rem;  /* Adjust the font size for the first line */
+  font-weight: 890;
+  color: white; /* Example color */
+  margin-bottom: 1px; /* Adjust vertical spacing if needed */
+}
+
+/* Styling for line2 */
+.line2 {
+  font-size: 4.5rem;  /* Adjust the font size for the second line */
+  font-weight: 900;
+  color: white; /* Example color */
+  margin-bottom: -10px; /* Adjust vertical spacing if needed */
+}
+
+/* Styling for blue-shape image */
+.blue-shape img {
+    z-index: 1;
+    position: relative;
+    margin-top: -355px; /* Push the image upward if needed */
+  width: 197px;  /* Adjust the width of the image */
+  height: 565px;  /* Maintain aspect ratio */
+  max-width: 100%;  /* Make sure it resizes based on the container */
+  transform-origin: center center; /* Important for rotation center */
+  transition: transform 0.1s ease; /* Smooth rotation animation */
+
+}
+
+  .right-half {
+    background-color: white;
+    width: 50%;
+    height: 150%;
+    padding: 50px;
+  }
+  
+  .frooti-content p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-left: 5rem;
+    margin-right: 6rem;
+    line-height: 1.3;
+  }
+  .social-icons {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start; /* or center/right if you want */
+    gap: 7px; /* spacing between icons */
+    padding: 0;
+    margin: 0;
+    margin-left: 3rem;  /* Same left margin as the paragraph */
+    margin-right: 6rem; /* Same right margin as the paragraph */
+    transform: translateX(40px); /* move 15px to the left */
+  }
+  .social-icons li {
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .social-icons li:nth-child(1) {
+    background: none;
+  }
+  
+  .social-icons li:nth-child(1) i {
+    font-size: 33px;
+  }
+  
+  .social-icons li a {
+    text-decoration: none; /* remove underline */
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .social-icons li a i {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+  }
+  .lastpage-container {
+    height: 117vh;
+    background-image: url(image/frooti_advrtsmnt.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 365px;
+  }
+  .end-section {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    width: 100%;
+    height: 37vh;
+    padding: 50px;
+    box-sizing: border-box;
+  }
+  
+  .left-side,
+  .middle-side,
+  .right-side {
+    color: rgb(0, 0, 51);
+    width: 50%;
+    font-size: 15px;
+    line-height: 1.3;
+  }
+  .left-side {
+    text-align: left;
+    padding-right: 20px;
+  }
+  
+  .middle-side {
+    text-align: left;
+    margin-top: 6px;
+  }
+  
+  .right-side {
+    text-align: left;
+    padding-left: 20px;
+  }
+  .mail-list {
+    list-style-type: none; /* Removes the bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    margin-top: 1.5%;
+  }
+  
+  .mail-list li {
+    margin-bottom: 5px; /* Optional: adds space between each list item */
+    font-weight: bold;
+    gap: 5px;
+  }
+  
+  .mail-list a {
+    text-decoration: none; /* Removes the underline from the links */
+    color: #010326; /* Set the text color */
+    font-size: 14px; /* Adjust font size */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .mail-list a:hover {
+    color: #da0c0c; /* Change the text color on hover */
+    text-decoration: underline; /* Optional: underline on hover */
+  }
+  .right-side {
+    font-size: 14px;
+    width: 30%;
+    color: #010326;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: 5rem;
+  }
+  
+  .Follow-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+  .Follow-list li{
+    margin-bottom: 7px;
+  }
+  
+  .Follow-list li a{
+    margin-bottom: 6px;
+    font-weight: bold;
+  }
+  
+  .right-side a {
+    color: #010326;
+    text-decoration: none;
+  }
+  .right-side p{
+    margin-top: -10px;
+  }
+  
+  .right-side a:hover {
+    text-decoration: underline;
+  }
+  .right-side p a:hover{
+    color: #da0c0c;
+  }
+  
+  .for-reference-icons {
+    margin-top: 5px;
+    padding-left: 0;         /* remove extra padding */
+    margin-left: 0;          /* reset margin */
+    display: flex;
+    gap: 7px;
+    font-size: 25px;
+    align-items: left; /* Aligns icons nicely with text */
+  }
+  
+  .for-reference-icons a {
+    color: #000000;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+  }
+  
+  .for-reference-icons a:hover {
+    transform: scale(1.1);  /* little zoom effect on hover */
+    color: #ff6600;         /* or your brand color */
+  }
+  
+  .Follow-list li a:hover{
+    color:  #da0c0c;
+  }
+  
+  
